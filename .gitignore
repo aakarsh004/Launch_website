@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+env/
+*.env
+crochet_env/
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Local settings (if any)
+local_settings.py

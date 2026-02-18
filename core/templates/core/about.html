@@ -1,0 +1,24 @@
+<!-- core/templates/core/about.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}About Us | PRAVYOM{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-cream">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <img src="https://imgs.search.brave.com/hhp1qaShO-QIfILFm57JdZOkLsHlsn5OV_Kt7Dbjoe4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzRkLzIx/LzY4LzRkMjE2OGNk/NWQzNGZkZjMyNTYy/ZDc4ZGZmMjU3NTZi/LmpwZw" class="img-fluid rounded shadow" alt="Our Studio">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold">About PRAVYOM</h2>
+                <p class="lead">Every stitch tells a story.</p>
+                <p></p>
+                <p>Hi, I'm Prastuti, the heart behind this crochet art 🧡. While pursuing my MBBS 📚🩺, I found comfort in crochet during stressful study hours 🧘‍♀️🧶. What began as a small hobby to relax soon became my creative escape 🎨✨ — a space where colors 🌈, yarn 🧵, and imagination 💭 came together. Through my work, I hope to inspire others to follow their creative spark 🔥 and remind them that beautiful things often bloom from the simplest beginnings 🌱🌸.</p>
+                <p>Want something special? We take custom orders! Tell us your vision, and we’ll bring it to life in yarn.</p>
+                <a href="{% url 'core:product_preview' %}" class="btn btn-outline-pink mt-3">Preview Our Creations</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

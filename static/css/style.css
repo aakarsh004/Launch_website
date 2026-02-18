@@ -1,0 +1,140 @@
+/* COLORS */
+:root {
+    --blush: #f8c1c1;
+    --pink: #e68ea7;
+    --cream: #fdf5e6;
+    --beige: #f5e6e0;
+    --dark-pink: #b96e8c;
+}
+
+.bg-blush { background-color: var(--blush); }
+.bg-cream { background-color: var(--cream); }
+.text-pink { color: var(--pink); }
+.btn-pink {
+    background-color: var(--pink);
+    border: none;
+}
+.btn-pink:hover {
+    background-color: var(--dark-pink);
+}
+.btn-outline-pink {
+    color: var(--pink);
+    border-color: var(--pink);
+}
+.btn-outline-pink:hover {
+    background-color: var(--pink);
+    color: white;
+}
+.btn-outline-blush {
+    color: var(--blush);
+    border-color: var(--blush);
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1920x1080/f5e6e0/8b5a5a?text=Crochet+Background') center/cover no-repeat;
+    min-height: 80vh;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.hero-section .container {
+    z-index: 2;
+}
+
+/* COUNTDOWN */
+#countdown {
+    font-family: 'Playfair Display', serif;
+}
+.timer-box {
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 12px;
+    min-width: 80px;
+}
+.timer-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+.timer-box small {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* PRODUCT CARDS */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* In static/css/style.css */
+.timer-box {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timer-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e68ea7;
+    display: block;
+}
+
+.timer-box small {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+    .btn-pink, .btn-outline-pink {
+        width: 100%;
+    }
+    .timer-box {
+        min-width: 60px;
+        padding: 0.75rem;
+    }
+    .timer-box span {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE MENU */
+.navbar-toggler {
+    border: none;
+}
